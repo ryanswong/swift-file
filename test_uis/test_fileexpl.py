@@ -6,7 +6,6 @@ import sys
 class Myview(QtWidgets.QMainWindow):
     def __init__(self):
         super(Myview, self).__init__()
-        # QtGui.QWidget.__init__(self)
         model = QtWidgets.QFileSystemModel()
         model.setRootPath('C:\Myfolder')
         view = QtWidgets.QTreeView()
