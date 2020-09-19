@@ -34,6 +34,12 @@
         <layout class="QFormLayout" name="edit_form">
          <item row="0" column="0">
           <widget class="QLabel" name="projectNameLabel">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="text">
             <string>Project Name</string>
            </property>
@@ -102,6 +108,20 @@
          <item row="6" column="1">
           <widget class="QCheckBox" name="qBEnteredCheckBox"/>
          </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Final File Name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
        <item alignment="Qt::AlignRight">
@@ -128,7 +148,7 @@
      </widget>
     </item>
     <item row="0" column="0">
-     <widget class="QWidget" name="file_widget" native="true">
+     <widget class="QWidget" name="file_explorer_widget" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
         <horstretch>0</horstretch>
