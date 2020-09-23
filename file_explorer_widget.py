@@ -14,7 +14,7 @@ class FileSystemView(QWidget):
 		self.model.setRootPath(dir_path)
 		self.tree = QTreeView()
 		self.tree.setModel(self.model)
-		self.tree.setRootIndex(self.model.index(dirPath))
+		self.tree.setRootIndex(self.model.index(dir_path))
 		self.tree.setColumnWidth(0, 250)
 		self.tree.setAlternatingRowColors(True)
 

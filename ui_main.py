@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainXCWhSj.ui'
+## Form generated from reading UI file 'mainOFuNjq.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.1
 ##
@@ -11,6 +11,7 @@
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
+from file_explorer_widget import FileSystemView
 
 
 class Ui_MainWindow(object):
@@ -20,8 +21,8 @@ class Ui_MainWindow(object):
         MainWindow.resize(936, 827)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.gridLayout_2 = QGridLayout(self.centralwidget)
-        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout = QGridLayout(self.centralwidget)
+        self.gridLayout.setObjectName(u"gridLayout")
         self.edit_frame = QFrame(self.centralwidget)
         self.edit_frame.setObjectName(u"edit_frame")
         sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
@@ -132,24 +133,20 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.pushButton, 0, Qt.AlignRight)
 
 
-        self.gridLayout_2.addWidget(self.edit_frame, 1, 0, 1, 1)
+        # #######################################################################################################
+        self.gridLayout.addWidget(self.edit_frame, 1, 0, 1, 1)
 
-        self.file_explorer_widget = QWidget(self.centralwidget)
+        # self.file_explorer_widget = QWidget(self.centralwidget)
+        # self.file_explorer_widget.setObjectName(u"file_explorer_widget")
+        # sizePolicy.setHeightForWidth(self.file_explorer_widget.sizePolicy().hasHeightForWidth())
+        # self.file_explorer_widget.setSizePolicy(sizePolicy)
+        # self.verticalLayout_3 = QVBoxLayout(self.file_explorer_widget)
+        # self.verticalLayout_3.setObjectName(u"verticalLayout_3")
 
-
-
-
-        self.file_explorer_widget = QWidget(self.centralwidget)
-        self.file_explorer_widget.setObjectName(u"file_explorer_widget")
-        sizePolicy.setHeightForWidth(self.file_explorer_widget.sizePolicy().hasHeightForWidth())
-        self.file_explorer_widget.setSizePolicy(sizePolicy)
-        self.verticalLayout_3 = QVBoxLayout(self.file_explorer_widget)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-
-        self.gridLayout_2.addWidget(self.file_explorer_widget, 0, 0, 1, 1)
-
-
-
+        # self.gridLayout.addWidget(self.file_explorer_widget, 0, 0, 1, 1)
+        # self.file_explorer_widget = FileSystemView(self.centralwidget, r'Z:\01 - L8 - back office\01 - L8 INBOX\chiyumi_hold')
+        self.file_explorer_widget = FileSystemView(r'Z:\01 - L8 - back office\01 - L8 INBOX\chiyumi_hold')
+        self.gridLayout.addWidget(self.file_explorer_widget, 0, 0, 1, 1)
 
         self.viewer_widget = QWidget(self.centralwidget)
         self.viewer_widget.setObjectName(u"viewer_widget")
@@ -158,7 +155,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QHBoxLayout(self.viewer_widget)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
 
-        self.gridLayout_2.addWidget(self.viewer_widget, 0, 1, 2, 1)
+        self.gridLayout.addWidget(self.viewer_widget, 0, 1, 2, 1)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)

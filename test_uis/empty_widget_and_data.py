@@ -205,3 +205,18 @@ if __name__ == "__main__":
 
     # Execute application
     sys.exit(app.exec_())
+
+
+
+# if __name__ == "__main__":
+#     # Qt Application
+#     app = QApplication(sys.argv)
+#     # QWidget
+#     widget = Widget()
+#     # QMainWindow using QWidget as central widget
+#     # window = MainWindow(widget)
+#     # window.resize(800, 600)
+#     widget.show()
+
+#     # Execute application
+#     sys.exit(app.exec_())
